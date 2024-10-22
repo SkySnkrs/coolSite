@@ -26,6 +26,7 @@ header {
     align-items: center;
     justify-content: space-between;
     font-size: 18px;
+    flex-wrap: wrap;
 }
 
 article {
@@ -53,6 +54,7 @@ section {
 footer {
     text-align: center;
     padding: 1em;
+    flex-wrap: wrap;
     min-height: 150px;
     background-color: var(--footer-grey);
 }
@@ -65,4 +67,10 @@ footer {
 
 .articleTitle {
     color: var(--cool-yellow);
+}
+
+@media screen AND (max-width: 750px) {
+    article {
+        flex-wrap: wrap;
+    }
 }
